@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">平家</string>
+    <string name="kiyomori">平清盛</string>
+    <string name="shigemori">平重盛</string>
+    <string name="munemori">平宗盛</string>
+    <string name="sigehira">平重衡</string>
+    <string name="antoku">安徳天皇</string>
+    <string name="delete">削除</string>
+</resources>
