@@ -1,4 +1,6 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
 
 android {
     compileSdkVersion 23
@@ -23,3 +25,71 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.0'
 }
+
+def siteUrl = 'https://github.com/numa08/ImmutableFragmentPagerAdapter'
+def gitUrl = 'https://github.com/numa08/ImmutableFragmentPagerAdapter.git'
+
+bintray {
+    user = bintray_username
+    key = bintray_api_key
+    pkg {
+        repo = 'maven'
+        name = library_id
+        userOrg = 'numa08'
+        licenses = ['MIT']
+        vcsUrl = gitUrl
+        websiteUrl = siteUrl
+        issueTrackerUrl = siteUrl + '/issues'
+        labels = ['android']
+        publicDownloadNumbers = true
+    }
+}
+
+install {
+    repositories.mavenInstaller {
+        pom {
+            project {
+                packaging 'aar'
+                name 'Remove and add and swap fragment pager adapter'
+                url siteUrl
+                developers {
+                    developer {
+                        id 'numa08'
+                        name 'numa08'
+                        email 'n511287@gmail.com'
+                    }
+                }
+                scm {
+                    connection gitUrl
+                    developerConnection gitUrl
+                    url siteUrl
+
+                }
+            }
+        }
+    }
+}
+
+task sourcesJar(type: Jar) {
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+
+task findConventions << {
+    println project.getConvention()
+}
+
