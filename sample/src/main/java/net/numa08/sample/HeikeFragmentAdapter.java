@@ -3,12 +3,12 @@ package net.numa08.sample;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
-import net.numa08.immutablefragmentstatepageradapter.ImmutableSupportFragmentStatePagerAdapter;
+import net.numa08.immutablefragmentstatepageradapter.support.ImmutableFragmentStatePagerAdapter;
 import net.numa08.sample.models.Heike;
 
 import java.util.List;
 
-public class HeikeFragmentAdapter extends ImmutableSupportFragmentStatePagerAdapter {
+public class HeikeFragmentAdapter extends ImmutableFragmentStatePagerAdapter {
 
     private final List<Heike> heikeList;
 

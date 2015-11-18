@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
         final List<Heike> heikeList = new ArrayList<>(
                 Arrays.asList(
-                        new Heike(getString(R.string.kiyomori), R.drawable.kiyomori),
-                        new Heike(getString(R.string.shigemori), R.drawable.shigemori),
-                        new Heike(getString(R.string.munemori), R.drawable.munemori),
-                        new Heike(getString(R.string.sigehira), R.drawable.shigehira),
-                        new Heike(getString(R.string.antoku), R.drawable.antoku)
+                        new Heike(getString(R.string.kiyomori), getString(R.string.kiyomori_description)),
+                        new Heike(getString(R.string.shigemori), getString(R.string.shigemori_description)),
+                        new Heike(getString(R.string.munemori), getString(R.string.munemori_description)),
+                        new Heike(getString(R.string.shigehira), getString(R.string.shigehira_description)),
+                        new Heike(getString(R.string.antoku), getString(R.string.antoku_description))
                 )
         );
 

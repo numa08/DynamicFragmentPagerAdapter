@@ -41,6 +41,6 @@ public class HeikeFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         ((TextView) view.findViewById(R.id.name)).setText(heike.getName());
-        ((ImageView) view.findViewById(R.id.main_image)).setImageDrawable(ContextCompat.getDrawable(getContext(), heike.getImageRes()));
+        ((TextView) view.findViewById(R.id.description)).setText(heike.getDescription());
     }
 }

@@ -7,24 +7,22 @@ import android.support.annotation.DrawableRes;
 public class Heike implements Parcelable {
 
     private final String name;
-    @DrawableRes
-    private final int imageRes;
+    private final String description;
 
-    public Heike(String name, int imageRes) {
+    public Heike(String name, String description) {
         this.name = name;
-        this.imageRes = imageRes;
-    }
-
-    @DrawableRes
-    public int getImageRes() {
-        return imageRes;
+        this.description = description;
     }
 
     public String getName() {
         return name;
     }
 
-    @Override
+    public String getDescription() {
+        return description;
+    }
+
+@Override
     public int describeContents() {
         return 0;
     }
@@ -32,12 +30,12 @@ public class Heike implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(this.name);
-        dest.writeInt(this.imageRes);
+        dest.writeString(this.description);
     }
 
     protected Heike(Parcel in) {
         this.name = in.readString();
-        this.imageRes = in.readInt();
+        this.description = in.readString();
     }
 
     public static final Creator<Heike> CREATOR = new Creator<Heike>() {

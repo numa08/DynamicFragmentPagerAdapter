@@ -10,13 +10,11 @@
         android:gravity="center"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         />
-    <ImageView
-        android:id="@+id/main_image"
+    <TextView
+        android:id="@+id/description"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
         android:layout_below="@id/name"
-        android:layout_alignParentBottom="true"
-        android:scaleType="centerInside"
-        android:contentDescription="@null"
         />
 </RelativeLayout>

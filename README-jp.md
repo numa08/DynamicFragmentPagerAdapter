@@ -1,5 +1,7 @@
 [ ![Download](https://api.bintray.com/packages/numa08/maven/immutablefragmentpageradapter/images/download.svg) ](https://bintray.com/numa08/maven/immutablefragmentpageradapter/_latestVersion)
 
+![](capture.gif)
+
 # Immutable Fragment Pager Adapter
 
 このライブラリは ViewPager を利用したとき任意の位置にある Fragment の削除/追加/入れ替えを可能にします。

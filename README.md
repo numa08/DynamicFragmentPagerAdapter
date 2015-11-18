@@ -1,5 +1,7 @@
 [ ![Download](https://api.bintray.com/packages/numa08/maven/immutablefragmentpageradapter/images/download.svg) ](https://bintray.com/numa08/maven/immutablefragmentpageradapter/_latestVersion)
 
+![](capture.gif)
+
 # Immutable Fragment Pager Adapter
 
 This library is able to remove, add and swap specify Fragment when you use ViewPager.
