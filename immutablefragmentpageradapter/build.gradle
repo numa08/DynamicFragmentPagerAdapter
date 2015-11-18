@@ -32,6 +32,7 @@ def gitUrl = 'https://github.com/numa08/ImmutableFragmentPagerAdapter.git'
 bintray {
     user = bintray_username
     key = bintray_api_key
+    configurations = ['archives']
     pkg {
         repo = 'maven'
         name = library_id

@@ -3,6 +3,7 @@ package net.numa08.sample;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 
+import net.numa08.immutablefragmentstatepageradapter.ImmutableSupportFragmentStatePagerAdapter;
 import net.numa08.sample.models.Heike;
 
 import java.util.List;

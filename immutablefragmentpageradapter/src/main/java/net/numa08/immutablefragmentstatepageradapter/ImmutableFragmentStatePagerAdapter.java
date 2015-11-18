@@ -1,4 +1,4 @@
-package net.numa08.sample;
+package net.numa08.immutablefragmentstatepageradapter;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
