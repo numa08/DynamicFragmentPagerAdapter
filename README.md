@@ -1,3 +1,5 @@
+[ ![Download](https://api.bintray.com/packages/numa08/maven/immutablefragmentpageradapter/images/download.svg) ](https://bintray.com/numa08/maven/immutablefragmentpageradapter/_latestVersion)
+
 # Immutable Fragment Pager Adapter
 
 This library is able to remove, add and swap specify Fragment when you use ViewPager.
@@ -7,3 +9,14 @@ This library is able to remove, add and swap specify Fragment when you use ViewP
 FragmentStateViewPager that is provided by Android SDK or Support Library can only remove or add Fragment to last position. If you do that bad performance...
 
 THis library can do that and have good performance.
+
+## Installation
+
+You write below code in your `build.gradle`
+
+
+```gradle
+dependencies {
+    compile 'net.numa08:immutablefragmentpageradapter:0.5'
+}
+```
