@@ -22,6 +22,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 //    compile project(':immutablefragmentpageradapter')
-    compile 'net.numa08:immutablefragmentpageradapter:0.5'
+    compile 'net.numa08:immutablefragmentpageradapter:0.6'
     compile 'com.android.support:design:23.1.1'
 }

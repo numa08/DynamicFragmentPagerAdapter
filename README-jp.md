@@ -16,6 +16,6 @@ Android の Support Library や SDK が提供している FragmentStatePagerAdap
 
 ```gradle
 dependencies {
-    compile 'net.numa08:immutablefragmentpageradapter:0.5'
+    compile 'net.numa08:immutablefragmentpageradapter:0.6'
 }
 ```

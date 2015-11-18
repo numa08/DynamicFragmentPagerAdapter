@@ -17,6 +17,6 @@ You write below code in your `build.gradle`
 
 ```gradle
 dependencies {
-    compile 'net.numa08:immutablefragmentpageradapter:0.5'
+    compile 'net.numa08:immutablefragmentpageradapter:0.6'
 }
 ```
