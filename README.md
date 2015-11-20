@@ -1,4 +1,4 @@
-[ ![Download](https://api.bintray.com/packages/numa08/maven/immutablefragmentpageradapter/images/download.svg) ](https://bintray.com/numa08/maven/immutablefragmentpageradapter/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/numa08/maven/dynamicfragmentpageradapter/images/download.svg) ](https://bintray.com/numa08/maven/dynamicfragmentpageradapter/_latestVersion)
 
 ![](capture.gif)
 
@@ -19,6 +19,6 @@ You write below code in your `build.gradle`
 
 ```gradle
 dependencies {
-    compile 'net.numa08:immutablefragmentpageradapter:0.6'
+    compile 'net.numa08:dynamicfragmentpageradapter:0.6.1'
 }
 ```

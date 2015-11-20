@@ -24,8 +24,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
 }
 
-def siteUrl = 'https://github.com/numa08/ImmutableFragmentPagerAdapter'
-def gitUrl = 'https://github.com/numa08/ImmutableFragmentPagerAdapter.git'
+def siteUrl = 'https://github.com/numa08/DynamicFragmentPagerAdapter'
+def gitUrl = 'https://github.com/numa08/DynamicFragmentPagerAdapter.git'
 
 bintray {
     user = bintray_username
