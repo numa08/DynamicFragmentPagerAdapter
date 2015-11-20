@@ -1,4 +1,4 @@
-package net.numa08.immutablefragmentstatepageradapter;
+package net.numa08.dynamicfragmentstatepageradapter;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class  ImmutableFragmentStatePagerAdapter extends PagerAdapter {
+public abstract class DynamicFragmentStatePagerAdapter extends PagerAdapter {
 
 
     private static final String TAG = "ifpa";
@@ -28,7 +28,7 @@ public abstract class  ImmutableFragmentStatePagerAdapter extends PagerAdapter {
     private Fragment mCurrentPrimaryItem = null;
     private Map<Fragment, Boolean> mFragmentIsDeleted = null;
 
-    public ImmutableFragmentStatePagerAdapter(FragmentManager fm) {
+    public DynamicFragmentStatePagerAdapter(FragmentManager fm) {
         mFragmentManager = fm;
     }
 

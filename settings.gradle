@@ -1,1 +1,1 @@
-include ':sample', ':immutablefragmentpageradapter'
+include ':sample', ':dynamicfragmentpageradapter'
