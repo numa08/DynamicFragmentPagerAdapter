@@ -19,6 +19,6 @@ You write below code in your `build.gradle`
 
 ```gradle
 dependencies {
-    compile 'net.numa08:dynamicfragmentpageradapter:0.6.1'
+    compile 'net.numa08:dynamicfragmentpageradapter:0.7.0'
 }
 ```

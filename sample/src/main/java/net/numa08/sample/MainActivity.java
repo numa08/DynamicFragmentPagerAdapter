@@ -77,6 +77,18 @@ public class MainActivity extends AppCompatActivity {
             adapter.removeItem(position);
             return true;
         }
+        if (item.getItemId() == R.id.swap_heike) {
+            if (adapter.getCount() < 1) {
+                return false;
+            }
+            final int position = mainPager.getCurrentItem();
+            if (position == 4) {
+                adapter.swapItem(4, 0);
+            } else {
+                adapter.swapItem(position, position + 1);
+            }
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 

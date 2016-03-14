@@ -22,5 +22,5 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':dynamicfragmentpageradapter')
-    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:design:23.2.0'
 }

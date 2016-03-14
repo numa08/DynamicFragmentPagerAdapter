@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import net.numa08.dynamicfragmentstatepageradapter.support.DynamicFragmentStatePagerAdapter;
 import net.numa08.sample.models.Heike;
 
+import java.util.Collections;
 import java.util.List;
 
 public class HeikeFragmentAdapter extends DynamicFragmentStatePagerAdapter {
@@ -36,5 +37,11 @@ public class HeikeFragmentAdapter extends DynamicFragmentStatePagerAdapter {
     public void removeItem(int position) {
         heikeList.remove(position);
         super.removeItem(position);
+    }
+
+    @Override
+    public void swapItem(int from, int to) {
+        Collections.swap(heikeList, from, to);
+        super.swapItem(from, to);
     }
 }

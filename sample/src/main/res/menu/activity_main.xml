@@ -7,4 +7,10 @@
         android:title="@string/delete"
         android:icon="@android:drawable/ic_menu_delete"
         app:showAsAction="always"/>
+    <item
+        android:id="@+id/swap_heike"
+        android:title="@string/swap"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        app:showAsAction="ifRoom"
+        />
 </menu>

@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -201,7 +202,7 @@ public abstract class DynamicFragmentStatePagerAdapter extends PagerAdapter {
      * 0 から始まる position の位置にある Fragment を削除します。データセットを更新する前にこのメソッドを呼び出してください。
      * notifyDataSetChanged は自動的に呼ばれます。
      * <code>
-     * adapter.updateContents(/your contents); // Do not call updateNotifyDataSetChanged
+     * adapter.updateContents(/your contents); // Do not call notifyDataSetChanged
      * adapter.remove(position);
      * </code>
      *
@@ -218,6 +219,31 @@ public abstract class DynamicFragmentStatePagerAdapter extends PagerAdapter {
         for (int i = 0; i < mFragments.size(); i++) {
             mFragmentIsDeleted.put(mFragments.get(i), i == position);
         }
+        notifyDataSetChanged();
+    }
+
+    /**
+     * 0 から始まる from,to の位置にある Fragment を削除します。データセットを更新する前にこのメソッドを呼び出してください。
+     * notifyDataSetChanged は自動的に呼ばれます。
+     * <code>
+     * adapter.updateContents(/your contents); // Do not call notifyDataSetChanged
+     * adapter.swap(from, to);
+     * </code>
+     *
+     * @param from 0から始まるFragmentの位置
+     * @param to 0から始まるFragmentの位置
+     */
+    public void swapItem(int from, int to) {
+        if (mFragments == null || mFragments.isEmpty()) {
+            return;
+        }
+        if (from < 0 || from > mFragments.size()) {
+            throwIndexOutOfBoundsException(from);
+        }
+        if (to < 0 || to > mFragments.size()) {
+            throwIndexOutOfBoundsException(to);
+        }
+        Collections.swap(mFragments, from, to);
         notifyDataSetChanged();
     }
 
